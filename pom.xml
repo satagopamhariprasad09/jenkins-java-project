@@ -10,8 +10,8 @@
 
     <properties>
         <docker.image.prefix>kammana</docker.image.prefix>
-        <maven.compiler.source>1.7</maven.compiler.source> <!-- Update to your desired version -->
-        <maven.compiler.target>1.7</maven.compiler.target> <!-- Update to your desired version -->
+        <maven.compiler.source>1.8</maven.compiler.source> <!-- Change to your desired version -->
+        <maven.compiler.target>1.8</maven.compiler.target> <!-- Change to your desired version -->
     </properties>  
     
     <dependencies>
@@ -48,4 +48,23 @@
             <url>http://repo1.maven.org/maven2</url>
         </pluginRepository>
     </pluginRepositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version> <!-- Use a recent version -->
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Ensure this is also updated -->
+                <configuration>
+                    <source>1.8</source> <!-- or your desired version -->
+                    <target>1.8</target> <!-- or your desired version -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
