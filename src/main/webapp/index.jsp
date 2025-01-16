@@ -1,5 +1,5 @@
 <!DOCTYPE html
-<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<!-- Coding Byw.codingnepalweb.com -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
